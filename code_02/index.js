@@ -1,3 +1,4 @@
-function rand() {
-    return Math.random();
-}
+const {randomInt} = require('./example_module');
+
+
+console.log(randomInt());
