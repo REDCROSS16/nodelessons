@@ -1,4 +1,8 @@
 const {randomInt} = require('./example_module');
 
+const hello = require('sayHello');
 
-console.log(randomInt());
+hello('123');
+
+
+// console.log(randomInt());
