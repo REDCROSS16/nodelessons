@@ -8,8 +8,6 @@ function checkPath() {
 
         return true;
     }
-
-    console.log('no');
     
     return false;
 }
