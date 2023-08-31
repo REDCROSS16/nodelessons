@@ -4,10 +4,7 @@ const path = require('path');
 function checkPath() {
     const pathToDir = './test';
 
-    if (fs.existsSync(pathToDir)) {
-
-        return true;
-    }
+    if (fs.existsSync(pathToDir)) { return true; }
     
     return false;
 }
