@@ -7,4 +7,9 @@ function checkPath(path) {
     return fs.existsSync(pathToDir) ? true : false;
 }
 
-checkPath();
+
+function fileInfo(path) {
+    const pathToDir = './' + path;
+
+    return checkPath(path) ? fs.statSync(pathToDir) : null;
+}
