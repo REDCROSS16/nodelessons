@@ -1,15 +1,7 @@
-const fs = require('fs');
-const path = require('path');
+const checkPath = require('./checkPath')
+const fileInfo = require('./fileInfo')
 
-function checkPath(path) {
-    const pathToDir = './' + path;
-
-    return fs.existsSync(pathToDir) ? true : false;
-}
-
-
-function fileInfo(path) {
-    const pathToDir = './' + path;
-
-    return checkPath(path) ? fs.statSync(pathToDir) : null;
+module.exports = {
+    'checkPath': checkPath,
+    'fileInfo': fileInfo
 }

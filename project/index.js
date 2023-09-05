@@ -1,5 +1,5 @@
 const {randomInt, randomArray} = require('./random');
-const {checkPath} = require('./file');
+const {checkPath, fileInfo} = require('./file');
 
 
 
