@@ -5,4 +5,4 @@ const {checkPath, fileInfo} = require('./file');
 
 // console.log(randomArray(20));
 
-console.log(checkPath());
+console.log(fileInfo('index.js'));
