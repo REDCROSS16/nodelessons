@@ -1,8 +1,8 @@
 const {randomInt, randomArray} = require('./random');
-const {checkPath, fileInfo} = require('./file');
+const file = require('./file');
 
 
 
 // console.log(randomArray(20));
 
-console.log(fileInfo('index.js'));
+console.log(file.getFilename('index.js'));
