@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const { log } = require('console');
 
 module.exports.getFilename = function (filepath) {
     return path.basename(filepath);
@@ -27,3 +28,4 @@ module.exports.readDir = function(filepath) {
 }
 
 const directoryPath = path.join(__dirname);
+console.log(directoryPath);
