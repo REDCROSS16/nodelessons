@@ -28,5 +28,3 @@ module.exports.readDir = function(filepath) {
 }
 
 const directoryPath = path.join(__dirname);
-
-// write
