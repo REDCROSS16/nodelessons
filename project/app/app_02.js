@@ -13,3 +13,5 @@ const pathToFile = 'new.txt';
 let array = ['new', 'book', 'of', 'bobba', 'fett'];
 
 // fs.writeFileSync(pathToFile, array.join('\r'), {encoding:'utf8', flag:'w'})
+
+//read json
