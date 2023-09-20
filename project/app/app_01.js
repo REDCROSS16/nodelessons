@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const pathToFile = '1.txt';
 
-const data = fs.readFileSync(pathToFile, {encoding:'utf8', flag:'r'}) 
+// const data = fs.readFileSync(pathToFile, {encoding:'utf8', flag:'r'}) 
 
 
 let arrayOfData = data.split('\n');
