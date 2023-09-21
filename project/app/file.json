@@ -1,0 +1,9 @@
+{
+    "name": "alex",
+    "age": 30,
+    "skills": ["php", "js"],
+    "inforamtion": {
+        "new": true,
+        "helpness" : false
+    }
+}
