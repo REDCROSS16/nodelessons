@@ -1,5 +1,6 @@
 const checkPath = require('./checkPath')
 const fileInfo = require('./fileInfo')
+
 const {getFilename, getExtension, parse, getDirname, readDir} = require('./getFilename');
 
 module.exports = {
