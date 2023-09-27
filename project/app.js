@@ -4,5 +4,5 @@ const http = require('http');
 http.createServer(function(req, res) {
     log('server work');
 
-    res.end(1);
+    res.end('1');
 }).listen(3500);
