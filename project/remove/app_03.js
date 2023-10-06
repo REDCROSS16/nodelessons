@@ -1,12 +1,10 @@
 const { log } = require('console');
 const http = require('http');
-const fs = require('fs');
 const PORT = 3500;
 
 http.createServer(function(req, res) {
     const url = req.url;
     log(url);
-    res.setHeader('Content-type', "text-html; charset=utf-8;");
 
     switch (url) {
         case '/':
@@ -15,8 +13,7 @@ http.createServer(function(req, res) {
             break;
         case '/contacts':
             log('contact page');
-            let data = fs.readFileSync('./contact.html', {encoding: 'utf-8', flag: 'r'});
-            res.write(data);
+            res.write('<h1>Contacts</h1>');
             break;
         default:
             log('default page');
