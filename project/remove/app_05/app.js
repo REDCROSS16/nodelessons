@@ -15,7 +15,7 @@ http.createServer(function(req, res) {
             break;
         case '/contacts':
             log('contact page');
-            let data = fs.readFileSync('./contact.html', {encoding: 'utf-8', flag: 'r'});
+            let data = fs.readFileSync('./public/contact.html', {encoding: 'utf-8', flag: 'r'});
             res.write(data);
             break;
         default:
