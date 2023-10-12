@@ -18,6 +18,9 @@ http.createServer(function(req, res) {
             let data = fs.readFileSync('./public/contact.html', {encoding: 'utf-8', flag: 'r'});
             res.write(data);
             break;
+        case '/login':
+            log('log into')
+            break    
         default:
             log('default page');
             res.write('page 404');        
