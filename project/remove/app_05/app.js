@@ -23,6 +23,21 @@ http.createServer(function(req, res) {
             break    
         default:
             log('default page');
+
+            if (url.includes('/images')) {
+                fs.readFile('./public' + url, {}, function(error, data) {
+                    if (error) {
+
+                    }
+
+                    res.setHeader('Content-Type', 'image/png');
+
+                    log('=====get ====')
+                    res.write(data)
+                })
+            }
+
+
             res.write('page 404');        
     }
 
