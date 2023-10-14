@@ -32,9 +32,7 @@ http.createServer(function(req, res) {
 
 
 function staticFile(res, filePath, ext) {
-    // set the header of page
     res.setHeader("Content-Type", mimeTypes[ext]);
-    // read async file
     fs.readFile('./public' + filePath, (error, data) => {
         if (error) { 
             endWith404(res);
