@@ -12,6 +12,7 @@ http.createServer(function(req, res) {
 
     switch(url) {
         case '/':
+            //  main page
             res.write('<h1>Main page</h1>');
             res.end();
             break;
