@@ -17,6 +17,7 @@ http.createServer(function(req, res) {
             res.end();
             break;
         case '/contact':
+            // contact page
             log('contact page');
             staticFile(res, '/contact.html', '.html');
             break;
