@@ -2,7 +2,7 @@ const { log } = require('console');
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const PORT = 3501;
+const PORT = 3500;
 
 const mimeTypes = require('./modules/mimetypes');
 
@@ -22,6 +22,7 @@ http.createServer(function(req, res) {
             staticFile(res, '/contact.html', '.html');
             break;
         default:
+            // default routes
             const extName = String(path.extname(url)).toLocaleLowerCase();
             if (extName in mimeTypes) {
                 staticFile(res, url, extName);
