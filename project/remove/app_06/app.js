@@ -8,7 +8,6 @@ const mimeTypes = require('./modules/mimetypes');
 
 http.createServer(function(req, res) {
     const url = req.url;
-    log(url);
 
     switch(url) {
         case '/':
