@@ -18,8 +18,17 @@ http.createServer(function(req, res) {
             staticFile(res, '/main.html', '.html');
             break;
         case '/about':
-            staticFile(res, '/about.html', '.html');
+            staticFile(res, url + '.html', '.html');
             break;
+        case '/contacts':
+            staticFile(res, url + '.html', '.html');
+            break;
+        case '/admin':
+            staticFile(res,  '/not_admin.html', '.html');
+            break;
+        case '/login':
+            staticFile(res,  '/login.html', '.html');
+            break;         
         default:
             const extname = String(path.extname(url)).toLocaleLowerCase();
             if (extname in mimeTypes)  {
