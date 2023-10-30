@@ -1,7 +1,1 @@
-start node
-
-
-### info
-
-
-### lessons
+### remove all, and start new course
