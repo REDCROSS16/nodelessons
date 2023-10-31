@@ -1,1 +1,2 @@
-### remove all, and start new course
+### to be continued...
+### course by Alex Lushenko
